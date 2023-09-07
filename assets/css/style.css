@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Great+Vibes&family=Gruppo&family=Neonderthaw&family=Roboto+Condensed:ital@1&family=Taviraj:ital,wght@0,200;1,200&family=Vollkorn:ital@1&display=swap');
+
+
+* {
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Taviraj', serif;
+    
+}
+body{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (min-width: 900px) {
+    .container{
+        height: 100%;
+        max-width: 1350px;
+        margin: 0 auto;  
+
+    }
+
+    a {
+        color:white;
+        text-decoration: none;
+    }
+
+    /* HEADER */
+    header {
+        height: 100%;
+        background-color: rgba(245, 245, 220, 0.139);
+        margin-bottom: 5rem;
+    }
+
+    header .container {
+        width: 1350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .logo-style {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: auto;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    nav li {
+        margin: 15px 15px;
+        display: inline-block;
+        font-size: 25px;    
+    }
+
+    header a:hover{
+        opacity: 0.8;
+        color: gold;
+    }
+
+
+
+    /* MAIN */ 
+    main {
+        height: 100%;
+        width: 100%;
+        color: gold
+    }
+    
+    main .container {
+        width: 1350px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr; 
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    main h1 {
+        font-size: 25px;
+        color: white;
+    }
+
+    main p {
+        margin: auto;
+        font-size: 20px;
+        color:white;
+    }
+
+    span p{
+        margin-top: 30px;
+        font-size: 20px;
+        color:white;
+     }
+
+    strong { 
+    margin-left: 30px;
+   
+    }
+
+    .headline-image {
+        width: 500px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+        border-radius: 20%;
+    }
+
+    /* ABOUT */
+    #about {
+        height: 100%;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .about .container {
+        width: 1350px;
+        margin: 0 auto;
+
+    }  
+
+    .image {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .abo-light h1 {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        padding-left: 35rem;
+        font-size: 25px;
+        color: white;
+    }
+    .abo-light p {
+        font-size: 25px;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        
+    }
+
+    .photo-size {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50px;
+        margin-left: 50%;
+    }
+
+  
+    /* SERVIS */ 
+    #servis {
+        height: 100%;
+        width: 100%; 
+        font-size: 25px;
+        padding-left: 40rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    
+    /* CONTAKT */
+    #contact {
+        height: 100%;
+        width: 100%;
+        font-size: 25px;
+        padding-left: 40rem; 
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .contact .container {
+        width: 1350;
+        display: flex;
+      
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        background-color: rgba(245, 245, 220, 0.139);
+    }
+
+    footer .container {
+        width: 1350px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        justify-content: space-between;
+        font-size: 25px;
+        padding-bottom: 0px;
+        padding-top: 5rem;
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        opacity: 0.8;
+        color:rgb(220, 192, 67);
+    }
+
+    .logo-stylee{
+        width: 150px;
+        padding-top: 2.5rem;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        color:white;
+    }
+
+
+   footer ul li a{
+        margin-bottom: 30px;
+        margin: 0px 10px;
+        font-size: 20px;  
+    }
+
+    .social-style{
+        margin-bottom: 6rem;
+    }
+} 
+/* end @media*/
+
+
+
+
+@media (max-width: 768px) {
+    .container{
+        height: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        color: white;  
+    }
+
+    nav {
+        display: none;
+    }
+  
+    
+    .image,
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    /* HEADER */
+   
+    header {
+        height: 100%;
+        padding-top: 1.5rem;
+        background-color: rgba(245, 245, 220, 0.139);
+    }
+
+    header .container{
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .logo-style {
+       max-width: 100px;
+    }
+
+
+    /* MAIN */ 
+
+    .headline-image {
+        max-width: 70%;
+        border-radius: 30%;
+    }
+
+
+    /* ABOUT */
+    #about {
+        
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .about .container {
+        display: grid;
+    }  
+
+    .image {
+        height: 100%;
+        max-width: 90%;
+        border-radius: 30%;
+        margin: 30px 0px;
+    }
+
+    .abo-light p {
+        margin-top: 2rem;
+        margin-bottom: 5rem;  
+    }
+
+        
+    /* SERVIS */ 
+    #servis {
+        margin-top: 5rem;
+        margin-bottom: 5rem; 
+    }
+
+    .servis .container {
+        display: flex;
+        
+    }
+
+
+    /* CONTAKT */
+    #contact {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact .container {
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+
+    /* FOOTER */
+    footer {
+        height: 100%; 
+        width: 100%;
+        background-color: rgba(245, 245, 220, 0.139);
+        margin-top: 5rem;
+    }
+    footer .container {
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;  
+        
+    }
+
+    .logo-stylee{
+        max-width: 100px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    }
+
+    footer a:hover{
+        opacity: 0.8;
+        color:rgb(220, 192, 67);
+    }
+
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
+    }
+
+
+   footer ul li a {
+        
+        color: white;
+        text-decoration: none;
+        margin-bottom: 3rem; 
+   }
+
+   .social-style{
+    margin-bottom: 3rem;
+        
+   }
+
+}
